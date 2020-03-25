@@ -6,7 +6,8 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface API {
-    String Base_url="https://api.covid19api.com/";
+    String Base_url = "https://api.covid19api.com/";
+
     @GET("summary")
-    Call<List<data>> getData();
+    Call<data2> getData();
 }
